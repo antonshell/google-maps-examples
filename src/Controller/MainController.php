@@ -18,4 +18,20 @@ class MainController extends AbstractController
     {
         return $this->render('main/index.html.twig');
     }
+
+    /**
+     * @Route("/markers", name="markers")
+     */
+    public function markers(Request $request): Response
+    {
+        return $this->render('main/markers.html.twig');
+    }
+
+    /**
+     * @Route("/geocode", name="geocode")
+     */
+    public function geocode(Request $request): Response
+    {
+        return $this->render('main/geocode.html.twig');
+    }
 }
