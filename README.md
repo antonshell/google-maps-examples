@@ -23,7 +23,8 @@ git clone https://github.com/antonshell/google-maps-examples.git
 4 . Run built in web-server:
 
 ```
-php -S 127.0.0.1:8000 public/index.php
+cd public
+php -S 127.0.0.1:8000
 ```
 
 4 . Open in browser:
