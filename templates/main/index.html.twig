@@ -14,18 +14,8 @@
     {{ parent() }}
 
     <script>
-        "use strict";
-
-        let map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: {
-                    lat: {{ initLat }},
-                    lng: {{ initLng }},
-                },
-                zoom: {{ initZoom }}
-            });
-        }
+        document.addEventListener('DOMContentLoaded', function(){
+            initMap();
+        });
     </script>
 {% endblock %}

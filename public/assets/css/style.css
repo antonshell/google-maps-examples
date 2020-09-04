@@ -10,3 +10,19 @@ body {
     width: 100%;
     min-height: 600px;
 }
+
+/* marker window - start */
+.map__window{
+    color: black;
+}
+
+.map__window-title{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+
+.map__window-description{
+    font-size: 1em;
+}
+/* marker window - end */
