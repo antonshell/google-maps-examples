@@ -2,7 +2,30 @@
 
 {% block content %}
     <div class="starter-template">
-        <h1>Index</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Simple map</h1>
     </div>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        "use strict";
+
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: {{ initLat }},
+                    lng: {{ initLng }},
+                },
+                zoom: {{ initZoom }}
+            });
+        }
+    </script>
 {% endblock %}

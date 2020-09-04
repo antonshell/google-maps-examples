@@ -5,3 +5,8 @@ body {
     padding: 3rem 1.5rem;
     text-align: center;
 }
+
+#map {
+    width: 100%;
+    min-height: 600px;
+}

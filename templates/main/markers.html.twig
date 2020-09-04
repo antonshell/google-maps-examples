@@ -5,4 +5,31 @@
         <h1>Markers</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     </div>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="/assets/js/map-markers.js"></script>
+    <script>
+        "use strict";
+
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: {{ googleMapsKey }},
+                    lng: {{ googleMapsKey }},
+                },
+                zoom: {{ googleMapsKey }}
+            });
+        }
+
+        //initMarkers();
+    </script>
 {% endblock %}
