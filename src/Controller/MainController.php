@@ -58,4 +58,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/elevation.html.twig');
     }
+
+    /**
+     * @Route("/gpx", name="gpx")
+     */
+    public function gpx(Request $request): Response
+    {
+        return $this->render('main/gpx.html.twig');
+    }
 }

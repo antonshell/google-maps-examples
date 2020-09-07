@@ -1,0 +1,53 @@
+{#
+ # Based on gpx example:
+ # http://christopherpeplin.com/2011/05/gpxviewer/
+ #
+ # And separate library:
+ # https://github.com/peplin/gpxviewer
+ #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="starter-template">
+        <h1>Show GPX</h1>
+    </div>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="/assets/js/loadgpx.js"></script>
+
+    <script>
+        function loadGPXFileIntoGoogleMap(map, filename) {
+            $.ajax({url: filename,
+                dataType: "xml",
+                success: function(data) {
+                    var parser = new GPXParser(data, map);
+                    parser.setTrackColour("#ff0000");
+                    parser.setTrackWidth(5);
+                    parser.setMinTrackPointDelta(0.001);
+                    parser.centerAndZoom(data);
+                    parser.addTrackpointsToMap();
+                    parser.addWaypointsToMap();
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: {{ initLat }},
+                    lng: {{ initLng }},
+                },
+                zoom: {{ initZoom }}
+            });
+
+            loadGPXFileIntoGoogleMap(map, "data/full.gpx");
+        });
+    </script>
+{% endblock %}
