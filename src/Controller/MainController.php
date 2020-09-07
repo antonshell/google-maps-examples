@@ -34,4 +34,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/geocode.html.twig');
     }
+
+    /**
+     * @Route("/clustering", name="clustering")
+     */
+    public function clustering(Request $request): Response
+    {
+        return $this->render('main/clustering.html.twig');
+    }
 }
