@@ -1,6 +1,11 @@
 {#
  # Layers description
  # https://developers.google.com/maps/documentation/javascript/layers
+ #
+ #  Trafic: https://developers.google.com/maps/documentation/javascript/examples/layer-traffic
+ #  Transit: https://developers.google.com/maps/documentation/javascript/examples/layer-transit
+ #  Bicycling: https://developers.google.com/maps/documentation/javascript/examples/layer-bicycling
+ #
  #}
 {% extends 'base.html.twig' %}
 
@@ -35,8 +40,8 @@
             // traffic
             var trafficMap = new google.maps.Map(document.getElementById("map-traffic"), {
                 center: {
-                    lat: 34.04924594193164,
-                    lng: -118.24104309082031
+                    lat: 59.967549,
+                    lng: 30.335076,
                 },
                 zoom: 13,
             });
@@ -45,10 +50,10 @@
 
             // transit
             const transitMap = new google.maps.Map(document.getElementById("map-transit"), {
-                zoom: 13,
+                zoom: 11,
                 center: {
-                    lat: 51.501904,
-                    lng: -0.115871
+                    lat: 55.733765,
+                    lng: 37.664833,
                 }
             });
             const transitLayer = new google.maps.TransitLayer();
