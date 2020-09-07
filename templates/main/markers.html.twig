@@ -71,7 +71,9 @@
                     map.setZoom(11);
                     map.setCenter(objPoint);
 
+                    var item = data[marker.id];
                     var contentString = '<div class="map__window" style="color: #000"><div class="map__window-title">' + item.name + '</div><p class="map__window-description">' + item.description + '</p></div>';
+                    
                     infoWindow = new google.maps.InfoWindow({
                         content: contentString
                     });
