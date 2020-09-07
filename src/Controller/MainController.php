@@ -42,4 +42,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/clustering.html.twig');
     }
+
+    /**
+     * @Route("/autocomplete", name="autocomplete")
+     */
+    public function autocomplete(Request $request): Response
+    {
+        return $this->render('main/autocomplete.html.twig');
+    }
 }
