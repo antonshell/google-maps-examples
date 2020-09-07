@@ -4,5 +4,70 @@
     <div class="starter-template">
         <h1>Geocode</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+        <input id="address" type="text" size="50">
+        <input id="geo" type="submit" value="submit">
     </div>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: {{ initLat }},
+                    lng: {{ initLng }},
+                },
+                zoom: {{ initZoom }}
+            });
+
+            var markers = [];
+            $('#geo').click(function () {
+                var geocoder = new google.maps.Geocoder();
+                var address = document.getElementById('address').value;
+
+                geocoder.geocode( { 'address': address}, function(results, status) {
+                    if (status !== google.maps.GeocoderStatus.OK) {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                        return;
+                    }
+
+                    var lat = results[0].geometry.location.lat();
+                    var lon = results[0].geometry.location.lng();
+
+                    console.log('### processGeocode ###')
+                    console.log(results)
+                    console.log(lat);
+                    console.log(lon);
+
+                    // remove old markers
+                    for (let i = 0; i < markers.length; i++) {
+                        markers[i].setMap(null);
+                    }
+                    markers = [];
+
+                    // create marker
+                    var myLatlng = new google.maps.LatLng(lat,lon);
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        title: address,
+                        icon: getMarkerIcon(),
+                    });
+                    markers.push(marker);
+                    marker.setMap(map);
+
+                    // center map
+                    var objPoint = new google.maps.LatLng(
+                        parseFloat( marker.position.lat() ),
+                        parseFloat( marker.position.lng() )
+                    );
+
+                    map.setZoom(11);
+                    map.setCenter(objPoint);
+                });
+            });
+        });
+    </script>
 {% endblock %}
