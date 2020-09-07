@@ -50,4 +50,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/autocomplete.html.twig');
     }
+
+    /**
+     * @Route("/elevation", name="elevation")
+     */
+    public function elevation(Request $request): Response
+    {
+        return $this->render('main/elevation.html.twig');
+    }
 }
