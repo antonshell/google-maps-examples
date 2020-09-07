@@ -66,4 +66,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/gpx.html.twig');
     }
+
+    /**
+     * @Route("/layers", name="layers")
+     */
+    public function layers(Request $request): Response
+    {
+        return $this->render('main/layers.html.twig');
+    }
 }

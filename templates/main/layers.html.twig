@@ -1,0 +1,70 @@
+{#
+ # Layers description
+ # https://developers.google.com/maps/documentation/javascript/layers
+ #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="starter-template">
+        <h1>Layers</h1>
+    </div>
+
+    <div class="row mt-5">
+        <h2>Traffic</h2>
+        <div id="map-traffic" class="map"></div>
+    </div>
+
+    <div class="row mt-5">
+        <h2>Transit</h2>
+        <div id="map-transit" class="map"></div>
+    </div>
+
+    <div class="row mt-5">
+        <h2>Bicycle</h2>
+        <div id="map-bicycle" class="map"></div>
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            // traffic
+            var trafficMap = new google.maps.Map(document.getElementById("map-traffic"), {
+                center: {
+                    lat: 34.04924594193164,
+                    lng: -118.24104309082031
+                },
+                zoom: 13,
+            });
+            const trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(trafficMap);
+
+            // transit
+            const transitMap = new google.maps.Map(document.getElementById("map-transit"), {
+                zoom: 13,
+                center: {
+                    lat: 51.501904,
+                    lng: -0.115871
+                }
+            });
+            const transitLayer = new google.maps.TransitLayer();
+            transitLayer.setMap(transitMap);
+
+            // bicycle
+            const bicycleMap = new google.maps.Map(document.getElementById("map-bicycle"), {
+                zoom: 14,
+                center: {
+                    lat: 42.3726399,
+                    lng: -71.1096528
+                }
+            });
+            const bikeLayer = new google.maps.BicyclingLayer();
+            bikeLayer.setMap(bicycleMap);
+        });
+
+    </script>
+{% endblock %}

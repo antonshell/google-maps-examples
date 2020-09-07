@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-#map {
+#map, .map {
     width: 100%;
     min-height: 600px;
 }
