@@ -77,33 +77,54 @@ Examples code can be found in **templates/main** directory
 1 . Markers: 
 [http://127.0.0.1:18080/markers](http://127.0.0.1:18080/markers)
 
+![markers](/public/assets/img/examples/markers.png)
+
 2 . Markers cluster
 [http://127.0.0.1:18080/clustering](http://127.0.0.1:18080/clustering)
+
+![clustering](/public/assets/img/examples/clustering.png)
 
 3 . Geocode
 [http://127.0.0.1:18080/geocode](http://127.0.0.1:18080/geocode)
 
+![geocode](/public/assets/img/examples/geocode.png)
+
 4 . Autocomplete
 [http://127.0.0.1:18080/autocomplete](http://127.0.0.1:18080/autocomplete)
+
+![autocomplete](/public/assets/img/examples/autocomplete.png)
 
 5 . Directions
 [http://127.0.0.1:18080/directions](http://127.0.0.1:18080/directions)
 
+![directions](/public/assets/img/examples/directions.png)
+
 6 . Elevation
 [http://127.0.0.1:18080/elevation](http://127.0.0.1:18080/elevation)
+
+![elevation](/public/assets/img/examples/elevation.png)
 
 7 . Layers
 [http://127.0.0.1:18080/layers](http://127.0.0.1:18080/layers)
 
+![layers](/public/assets/img/examples/layers.png)
+
 8 . Panorama
 [http://127.0.0.1:18080/panorama](http://127.0.0.1:18080/panorama)
 
+![panorama](/public/assets/img/examples/panorama.png)
+
 9 . Polygon
-http://127.0.0.1:18080/polygon
 [http://127.0.0.1:18080/polygon](http://127.0.0.1:18080/polygon)
+
+![polygon](/public/assets/img/examples/polygon.png)
 
 10 . Polyline
 [http://127.0.0.1:18080/polyline](http://127.0.0.1:18080/polyline)
 
+![polyline](/public/assets/img/examples/polyline.png)
+
 11 . GPX track
 [http://127.0.0.1:18080/gpx](http://127.0.0.1:18080/gpx)
+
+![gpx](/public/assets/img/examples/gpx.png)
