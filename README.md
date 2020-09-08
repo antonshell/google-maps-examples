@@ -78,6 +78,10 @@ Create api key as described in the documentation:
 Here is more detailed unofficial tutorial:
 [https://www.wpmapspro.com/docs/how-to-create-an-api-key/](https://www.wpmapspro.com/docs/how-to-create-an-api-key/)
 
+There is list of enabled APIs:
+
+![apis](/public/assets/img/examples/apis.png)
+
 ## Examples
 
 Examples code can be found in **templates/main** directory
