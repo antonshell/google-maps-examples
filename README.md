@@ -80,11 +80,20 @@ Examples code can be found in **templates/main** directory
 
 ![markers](/public/assets/img/examples/markers.png)
 
+References:
+
+- [Markers documentation](https://developers.google.com/maps/documentation/javascript/markers)
+
 ### 2 . Markers cluster
 
 [http://127.0.0.1:18080/clustering](http://127.0.0.1:18080/clustering)
 
 ![clustering](/public/assets/img/examples/clustering.png)
+
+References:
+
+- [Documentation](https://developers.google.com/maps/documentation/javascript/marker-clustering)
+- [Example](https://googlemaps.github.io/v3-utility-library/packages/markerclustererplus/examples/advanced_example.html)
 
 ### 3 . Geocode
 
@@ -92,11 +101,20 @@ Examples code can be found in **templates/main** directory
 
 ![geocode](/public/assets/img/examples/geocode.png)
 
+References:
+
+- [Geocoding](https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple)
+- [Reverse Geocoding](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse)
+
 ### 4 . Autocomplete
 
 [http://127.0.0.1:18080/autocomplete](http://127.0.0.1:18080/autocomplete)
 
 ![autocomplete](/public/assets/img/examples/autocomplete.png)
+
+References:
+
+- [Places autocomplete](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete)
 
 ### 5 . Directions
 
@@ -104,11 +122,22 @@ Examples code can be found in **templates/main** directory
 
 ![directions](/public/assets/img/examples/directions.png)
 
+References:
+
+- [Directions simple](https://developers.google.com/maps/documentation/javascript/examples/directions-simple)
+- [Directions with text panel](https://developers.google.com/maps/documentation/javascript/examples/directions-panel)
+- [Directions dragable](https://developers.google.com/maps/documentation/javascript/examples/directions-draggable)
+
 ### 6 . Elevation
 
 [http://127.0.0.1:18080/elevation](http://127.0.0.1:18080/elevation)
 
 ![elevation](/public/assets/img/examples/elevation.png)
+
+References:
+
+- [Elevation simple](https://developers.google.com/maps/documentation/javascript/examples/elevation-simple)
+- [Elevation with path](https://developers.google.com/maps/documentation/javascript/examples/elevation-paths)
 
 ### 7 . Layers
 
@@ -116,11 +145,25 @@ Examples code can be found in **templates/main** directory
 
 ![layers](/public/assets/img/examples/layers.png)
 
+References:
+
+- [Layers](https://developers.google.com/maps/documentation/javascript/layers)
+- [Traffic layer](https://developers.google.com/maps/documentation/javascript/examples/layer-traffic)
+- [Transit layer](https://developers.google.com/maps/documentation/javascript/examples/layer-transit)
+- [Bicycling layer](https://developers.google.com/maps/documentation/javascript/examples/layer-bicycling)
+
 ### 8 . Panorama
 
 [http://127.0.0.1:18080/panorama](http://127.0.0.1:18080/panorama)
 
 ![panorama](/public/assets/img/examples/panorama.png)
+
+References:
+
+- [Layers](https://developers.google.com/maps/documentation/javascript/layers)
+- [Traffic layer](https://developers.google.com/maps/documentation/javascript/examples/layer-traffic)
+- [Transit layer](https://developers.google.com/maps/documentation/javascript/examples/layer-transit)
+- [Bicycling layer](https://developers.google.com/maps/documentation/javascript/examples/layer-bicycling)
 
 ### 9 . Polygon
 
@@ -128,14 +171,37 @@ Examples code can be found in **templates/main** directory
 
 ![polygon](/public/assets/img/examples/polygon.png)
 
+References:
+
+- [Polygon simple](https://developers.google.com/maps/documentation/javascript/examples/polygon-simple)
+- [Polygon with hole](https://developers.google.com/maps/documentation/javascript/examples/polygon-hole)
+- [Circle](https://developers.google.com/maps/documentation/javascript/examples/circle-simple)
+- [Rectangle](https://developers.google.com/maps/documentation/javascript/examples/rectangle-simple)
+- [Editable rectangle](https://developers.google.com/maps/documentation/javascript/examples/user-editable-shapes)
+- [Dragable polygon](https://developers.google.com/maps/documentation/javascript/examples/polygon-draggable)
+
 ### 10 . Polyline
 
 [http://127.0.0.1:18080/polyline](http://127.0.0.1:18080/polyline)
 
 ![polyline](/public/assets/img/examples/polyline.png)
 
+References:
+
+- [Polyline](https://developers.google.com/maps/documentation/javascript/examples/polyline-simple)
+- [Editable polyline](https://developers.google.com/maps/documentation/javascript/examples/delete-vertex-menu)
+- [Drawing polyline](https://developers.google.com/maps/documentation/javascript/examples/polyline-complex)
+- [Drawing polyline](https://developers.google.com/maps/documentation/javascript/examples/polyline-complex)
+- [Arrow polyline](https://developers.google.com/maps/documentation/javascript/examples/overlay-symbol-arrow)
+- [Dashed polyline](https://developers.google.com/maps/documentation/javascript/examples/overlay-symbol-dashed)
+
 ### 11 . GPX track
 
 [http://127.0.0.1:18080/gpx](http://127.0.0.1:18080/gpx)
 
 ![gpx](/public/assets/img/examples/gpx.png)
+
+References:
+
+- [Tutorial](http://christopherpeplin.com/2011/05/gpxviewer/)
+- [Library](https://github.com/peplin/gpxviewer)
