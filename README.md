@@ -3,6 +3,8 @@
 There are few examples of work with google maps. 
 Implemented examples for Markers, Markers cluster, Geocode, Autocomplete, Directions, Elevation, Layers, Panorama, Polygon, Polyline, GPX track features.
 
+![main](/public/assets/img/examples/main.png)
+
 ## Install (locally)
 
 1 . Clone repository:
