@@ -11,6 +11,11 @@ body {
     min-height: 600px;
 }
 
+#pano {
+    width: 100%;
+    min-height: 600px;
+}
+
 /* marker window - start */
 .map__window{
     color: black;

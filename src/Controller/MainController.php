@@ -74,4 +74,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/layers.html.twig');
     }
+
+    /**
+     * @Route("/panorama", name="panorama")
+     */
+    public function panorama(Request $request): Response
+    {
+        return $this->render('main/panorama.html.twig');
+    }
 }

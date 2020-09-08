@@ -1,0 +1,60 @@
+{#
+ # Based on example:
+ # https://developers.google.com/maps/documentation/javascript/examples/streetview-simple
+ #}
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <style>
+        #map, #pano {
+            min-height: 400px !important;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="starter-template">
+        <h1>Street view panorama</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="pano"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const fenway = {
+                lat: 59.933343,
+                lng: 30.305883,
+            };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: fenway,
+                zoom: 16
+            });
+
+            const panorama = new google.maps.StreetViewPanorama(
+                document.getElementById("pano"),
+                {
+                    position: fenway,
+                    pov: {
+                        heading: 20,
+                        pitch: 18
+                    }
+                }
+            );
+            map.setStreetView(panorama);
+        });
+    </script>
+{% endblock %}
