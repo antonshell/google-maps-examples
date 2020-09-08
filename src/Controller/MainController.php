@@ -82,4 +82,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/panorama.html.twig');
     }
+
+    /**
+     * @Route("/directions", name="directions")
+     */
+    public function directions(Request $request): Response
+    {
+        return $this->render('main/directions.html.twig');
+    }
 }
