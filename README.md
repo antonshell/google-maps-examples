@@ -72,4 +72,38 @@ GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 
 ## Examples
 
+Examples code can be found in **templates/main** directory
 
+1 . Markers: 
+[http://127.0.0.1:18080/markers](http://127.0.0.1:18080/markers)
+
+2 . Markers cluster
+[http://127.0.0.1:18080/clustering](http://127.0.0.1:18080/clustering)
+
+3 . Geocode
+[http://127.0.0.1:18080/geocode](http://127.0.0.1:18080/geocode)
+
+4 . Autocomplete
+[http://127.0.0.1:18080/autocomplete](http://127.0.0.1:18080/autocomplete)
+
+5 . Directions
+[http://127.0.0.1:18080/directions](http://127.0.0.1:18080/directions)
+
+6 . Elevation
+[http://127.0.0.1:18080/elevation](http://127.0.0.1:18080/elevation)
+
+7 . Layers
+[http://127.0.0.1:18080/layers](http://127.0.0.1:18080/layers)
+
+8 . Panorama
+[http://127.0.0.1:18080/panorama](http://127.0.0.1:18080/panorama)
+
+9 . Polygon
+http://127.0.0.1:18080/polygon
+[http://127.0.0.1:18080/polygon](http://127.0.0.1:18080/polygon)
+
+10 . Polyline
+[http://127.0.0.1:18080/polyline](http://127.0.0.1:18080/polyline)
+
+11 . GPX track
+[http://127.0.0.1:18080/gpx](http://127.0.0.1:18080/gpx)
