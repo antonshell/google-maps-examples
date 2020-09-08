@@ -70,6 +70,14 @@ GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 
 [http://127.0.0.1:18080/](http://127.0.0.1:18080/)
 
+## Get API KEY
+
+Create api key as described in the documentation:
+[https://developers.google.com/maps/documentation/javascript/get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+
+Here is more detailed unofficial tutorial:
+[https://www.wpmapspro.com/docs/how-to-create-an-api-key/](https://www.wpmapspro.com/docs/how-to-create-an-api-key/)
+
 ## Examples
 
 Examples code can be found in **templates/main** directory
