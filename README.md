@@ -1,6 +1,7 @@
 # Google maps examples
 
-There are few examples of work with google maps
+There are few examples of work with google maps. 
+Implemented examples for Markers, Markers cluster, Geocode, Autocomplete, Directions, Elevation, Layers, Panorama, Polygon, Polyline, GPX track features.
 
 ## Install (locally)
 
