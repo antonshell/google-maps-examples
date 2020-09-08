@@ -13,11 +13,19 @@ git clone https://github.com/antonshell/google-maps-examples.git
 2 . Install dependencies
 
 ```
+composer install
 ```
 
 3 . Set API KEY:
 
+Create env file
 ```
+nano .env.local
+```
+
+Set variable
+```
+GOOGLE_MAPS_API_KEY=YOUR_API_KEY
 ```
 
 4 . Run built in web-server:
