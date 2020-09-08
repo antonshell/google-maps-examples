@@ -90,4 +90,20 @@ class MainController extends AbstractController
     {
         return $this->render('main/directions.html.twig');
     }
+
+    /**
+     * @Route("/polygon", name="polygon")
+     */
+    public function polygon(Request $request): Response
+    {
+        return $this->render('main/polygon.html.twig');
+    }
+
+    /**
+     * @Route("/polyline", name="polyline")
+     */
+    public function polyline(Request $request): Response
+    {
+        return $this->render('main/polyline.html.twig');
+    }
 }

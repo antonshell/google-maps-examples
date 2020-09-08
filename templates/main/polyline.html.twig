@@ -1,0 +1,84 @@
+{#
+ # Based on example:
+ # https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
+ #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="starter-template">
+        <h1>Polyline</h1>
+    </div>
+
+    <div class="row">
+        <div id="map"></div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: 59.942108,
+                    lng: 30.254464,
+                },
+                zoom: 12
+            });
+
+            const coords = [
+                {
+                    lat: 59.955334,
+                    lng: 30.235914,
+                },
+                {
+                    lat: 59.954969,
+                    lng: 30.242711,
+                },
+                {
+                    lat: 59.955941,
+                    lng: 30.251815,
+                },
+                {
+                    lat: 59.951991,
+                    lng: 30.264803,
+                },
+                {
+                    lat: 59.948709,
+                    lng: 30.268808,
+                },
+                {
+                    lat: 59.949803,
+                    lng: 30.271600,
+                },
+                {
+                    lat: 59.949696,
+                    lng: 30.275833,
+                },
+                {
+                    lat: 59.944420,
+                    lng: 30.304623,
+                },
+                {
+                    lat: 59.942149,
+                    lng: 30.306828,
+                },
+                {
+                    lat: 59.933926,
+                    lng: 30.277548,
+                },
+            ]; // Construct the polyline
+
+            const flightPath = new google.maps.Polyline({
+                path: coords,
+                geodesic: true,
+                strokeColor: "#FF0000",
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
+            flightPath.setMap(map);
+
+        });
+    </script>
+{% endblock %}
