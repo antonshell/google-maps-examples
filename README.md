@@ -54,6 +54,18 @@ cd google-maps-examples
 docker-compose up -d
 ```
 
+3 . Set API KEY:
+
+Create env file
+```
+nano .env.local
+```
+
+Set variable
+```
+GOOGLE_MAPS_API_KEY=YOUR_API_KEY
+```
+
 3 . Open in browser:
 
 [http://127.0.0.1:18080/](http://127.0.0.1:18080/)
