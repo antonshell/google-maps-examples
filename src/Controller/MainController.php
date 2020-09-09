@@ -106,4 +106,13 @@ class MainController extends AbstractController
     {
         return $this->render('main/polyline.html.twig');
     }
+
+    public function pageNotFoundAction(): Response
+    {
+        return $this->render(
+            'error/error404.html.twig',
+            [],
+            new Response('', Response::HTTP_NOT_FOUND)
+        );
+    }
 }
