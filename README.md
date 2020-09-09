@@ -175,10 +175,7 @@ References:
 
 References:
 
-- [Layers](https://developers.google.com/maps/documentation/javascript/layers)
-- [Traffic layer](https://developers.google.com/maps/documentation/javascript/examples/layer-traffic)
-- [Transit layer](https://developers.google.com/maps/documentation/javascript/examples/layer-transit)
-- [Bicycling layer](https://developers.google.com/maps/documentation/javascript/examples/layer-bicycling)
+- [Simple example](https://developers.google.com/maps/documentation/javascript/examples/streetview-simple)
 
 ### 9 . Polygon
 
